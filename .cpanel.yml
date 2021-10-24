@@ -18,6 +18,7 @@ deployment:
     - /bin/cp search.php $DEPLOYPATH
     - /bin/cp ucp.php $DEPLOYPATH
     - /bin/cp viewforum.php $DEPLOYPATH
+    - /bin/cp viewonline.php $DEPLOYPATH
     - /bin/cp viewtopic.php $DEPLOYPATH
     - /bin/cp web.config $DEPLOYPATH
     - /bin/cp -R adm $DEPLOYPATH
