@@ -1,0 +1,39 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/user/public_html/
+    - /bin/cp app.php $DEPLOYPATH
+    - /bin/cp common.php $DEPLOYPATH
+    - /bin/cp composer.json $DEPLOYPATH
+    - /bin/cp composer.lock $DEPLOYPATH
+    - /bin/cp config.php $DEPLOYPATH
+    - /bin/cp cron.php $DEPLOYPATH
+    - /bin/cp faq.php $DEPLOYPATH
+    - /bin/cp feed.php $DEPLOYPATH
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp mcp.php $DEPLOYPATH
+    - /bin/cp memberlist.php $DEPLOYPATH
+    - /bin/cp posting.php $DEPLOYPATH
+    - /bin/cp report.php $DEPLOYPATH
+    - /bin/cp search.php $DEPLOYPATH
+    - /bin/cp ucp.php $DEPLOYPATH
+    - /bin/cp viewforum.php $DEPLOYPATH
+    - /bin/cp vewitopic.php $DEPLOYPATH
+    - /bin/cp web.config $DEPLOYPATH
+    - /bin/cp -R adm $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R bin $DEPLOYPATH
+    - /bin/cp -R cache $DEPLOYPATH
+    - /bin/cp -R config $DEPLOYPATH
+    - /bin/cp -R docs $DEPLOYPATH
+    - /bin/cp -R download $DEPLOYPATH
+    - /bin/cp -R ext $DEPLOYPATH
+    - /bin/cp -R files $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R includes $DEPLOYPATH
+    - /bin/cp -R install $DEPLOYPATH
+    - /bin/cp -R language $DEPLOYPATH
+    - /bin/cp -R phpbb $DEPLOYPATH
+    - /bin/cp -R store $DEPLOYPATH
+    - /bin/cp -R styles $DEPLOYPATH
+    - /bin/cp -R vendor $DEPLOYPATH
