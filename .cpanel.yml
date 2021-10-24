@@ -7,7 +7,6 @@ deployment:
     - /bin/cp common.php $DEPLOYPATH
     - /bin/cp composer.json $DEPLOYPATH
     - /bin/cp composer.lock $DEPLOYPATH
-    - /bin/cp config.php $DEPLOYPATH
     - /bin/cp cron.php $DEPLOYPATH
     - /bin/cp faq.php $DEPLOYPATH
     - /bin/cp feed.php $DEPLOYPATH
