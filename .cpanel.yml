@@ -2,6 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ggmzst01/public_html/
+    - /bin/cp .htaccess $DEPLOYPATH
     - /bin/cp app.php $DEPLOYPATH
     - /bin/cp common.php $DEPLOYPATH
     - /bin/cp composer.json $DEPLOYPATH
