@@ -32,7 +32,6 @@ deployment:
     - /bin/cp -R files $DEPLOYPATH
     - /bin/cp -R images $DEPLOYPATH
     - /bin/cp -R includes $DEPLOYPATH
-    - /bin/cp -R install $DEPLOYPATH
     - /bin/cp -R language $DEPLOYPATH
     - /bin/cp -R phpbb $DEPLOYPATH
     - /bin/cp -R store $DEPLOYPATH
