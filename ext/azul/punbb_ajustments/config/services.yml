@@ -1,0 +1,6 @@
+services:
+  azul.punbb_ajustments.notification.type.mention:
+    class: azul\punbb_ajustments\notification\type\mention
+    parent: notification.type.base
+    shared: false
+    tags: [{ name: notification.type }]

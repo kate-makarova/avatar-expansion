@@ -1,0 +1,67 @@
+
+<!-- BEGIN forumrow -->
+	<!-- IF (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  -->
+</tbody>
+</table>
+</div>
+</div>
+	<!-- ENDIF -->
+
+	<!-- EVENT forumlist_body_category_header_before -->
+	<!-- IF forumrow.S_IS_CAT  -->
+<div id="pun-category1" class="category category-3">
+	<h2><div class="catleft"><!-- --></div><span>{forumrow.FORUM_NAME}</span><div class="catright"><!-- --></div></h2>
+	<div class="container">
+		<table cellspacing="0" summary="Список форумов в категории: удержи меня">
+			<thead>
+			<tr>
+				<th class="tcl" scope="col">Форум</th>
+				<th class="tc2" scope="col">Тем</th>
+				<th class="tc3" scope="col">Сообщений</th>
+				<th class="tcr" scope="col">Последнее сообщение</th>
+			</tr>
+			</thead>
+			<tbody class="hasicon">
+	<!-- ENDIF -->
+	<!-- EVENT forumlist_body_category_header_after -->
+
+	<!-- IF not forumrow.S_IS_CAT -->
+		<!-- EVENT forumlist_body_forum_row_before -->
+			<!-- EVENT forumlist_body_forum_row_prepend -->
+	<tr id="forum_f2" class="alt2">
+		<td class="tcl">
+			<div class="intd">
+				<div class="icon"><!-- --></div>
+				<div class="tclcon"><h3><a href="{forumrow.U_VIEWFORUM}">{forumrow.FORUM_NAME}</a></h3>
+					<div class="podfor">
+						<!-- IF forumrow.FORUM_DESC --><br/>{forumrow.FORUM_DESC}<!-- ENDIF -->
+					</div>
+				</div>
+			</div>
+		</td>
+		<td class="tc2">{forumrow.TOPICS}</td>
+		<td class="tc3">{forumrow.POSTS}</td>
+		<td class="tcr"><a
+				href="{forumrow.U_LAST_POST}">{forumrow.LAST_POST_SUBJECT_TRUNCATED}</a><br/><span
+				class="lastpost"><span class="datetime">{forumrow.LAST_POST_TIME}</span> - <span
+				class="byuser">{forumrow.LAST_POSTER_FULL}</span></span></td>
+	</tr>
+			<!-- EVENT forumlist_body_forum_row_append -->
+		<!-- EVENT forumlist_body_forum_row_after -->
+	<!-- ENDIF -->
+
+	<!-- IF forumrow.S_LAST_ROW -->
+<!--			</ul>-->
+
+<!--			</div>-->
+<!--		</div>-->
+	<!-- EVENT forumlist_body_last_row_after -->
+	<!-- ENDIF -->
+
+<!-- BEGINELSE -->
+	<div class="panel">
+		<div class="inner">
+		<strong>{L_NO_FORUMS}</strong>
+		</div>
+	</div>
+<!-- END forumrow -->

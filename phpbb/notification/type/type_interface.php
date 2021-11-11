@@ -35,9 +35,9 @@ interface type_interface
 	/**
 	* Get the id of the item
 	*
-	* @param array $type_data The type specific data
+	* @param array $type_type_data The type specific data
 	*/
-	static public function get_item_id($type_data);
+	static public function get_item_id($type_type_data);
 
 	/**
 	* Get the id of the parent

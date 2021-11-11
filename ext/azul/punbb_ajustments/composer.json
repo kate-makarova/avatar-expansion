@@ -1,0 +1,30 @@
+{
+  "name": "azul/punbb_ajustments",
+  "type": "phpbb-extension",
+  "description": "PunBB Ajustments",
+  "homepage": "https://github.com/phpbb/phpbb-ext-acme-demo",
+  "version": "0.1.0",
+  "time": "2013-11-05",
+  "keywords": ["phpbb", "extension", "azul", "punbb"],
+  "license": "GPL-2.0-only",
+  "authors": [
+    {
+      "name": "Azul",
+      "email": "azula@avatar-expansion.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=8.0.0",
+    "composer/installers": "~1.0"
+  },
+  "require-dev": {
+    "phpbb/epv": "dev-master"
+  },
+  "extra": {
+    "display-name": "PunBB Ajustments",
+    "soft-require": {
+      "phpbb/phpbb": "~3.5"
+    }
+  }
+}
